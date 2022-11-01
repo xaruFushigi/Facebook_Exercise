@@ -1,0 +1,74 @@
+html{
+    background-color: white;
+}
+
+
+body {
+    background-image: url(https://wallpaperaccess.com/full/2031901.jpg);
+    background-size:14%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 41%;
+    background-position-y: 54%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.container {
+    border-radius: 18px;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    grid-template-columns: auto auto;
+    width: 20%;
+}
+
+
+    .userInfo{
+        display: grid;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        gap: 16px;
+        position: relative;
+    }
+
+
+    .inputInfo{
+        display: grid;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        grid-template-columns: auto auto;
+        grid-template-columns: auto minmax(200px, 1fr);
+        gap: 10px;
+    }
+
+    input{
+        border-color: rgba(43, 38, 38, 0.078);
+        background-color: transparent;
+    }
+
+    #btn{
+        background-color: rgb(211, 185, 159);
+        padding: 7px 13px 7px 13px;
+        border-radius: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+
+    }
+
+        .button{
+            align-items: center;
+            display: grid;
+            justify-content: center;
+            padding-left: 100%;
+            padding-top: 40%;
+            width: 100%;
+        }
+
+        
