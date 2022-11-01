@@ -1,20 +1,19 @@
-html{
+html, body{
     background-color: white;
+    background-attachment: fixed;
+    background-image: url(https://wallpaperaccess.com/full/2031901.jpg);
+    background-size: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
 }
 
 
 body {
-    background-image: url(https://wallpaperaccess.com/full/2031901.jpg);
-    background-size:14%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 41%;
-    background-position-y: 54%;
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-top: 15%;
-    padding-bottom: 15%;
+
 }
 
 .container {
@@ -22,9 +21,9 @@ body {
     align-items: center;
     display: grid;
     justify-content: center;
+    position: fixed;
     gap: 5px;
     grid-template-columns: auto auto;
-    width: 20%;
 }
 
 
@@ -43,14 +42,21 @@ body {
         display: grid;
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
-        grid-template-columns: auto auto;
-        grid-template-columns: auto minmax(200px, 1fr);
-        gap: 10px;
+        grid-template-columns: auto;
+        gap: 20px;
     }
 
     input{
         border-color: rgba(43, 38, 38, 0.078);
         background-color: transparent;
+    }
+
+    .spanMessage{
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
     }
 
     #btn{
@@ -66,8 +72,6 @@ body {
             align-items: center;
             display: grid;
             justify-content: center;
-            padding-left: 100%;
-            padding-top: 40%;
             width: 100%;
         }
 

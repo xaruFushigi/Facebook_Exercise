@@ -17,15 +17,10 @@ if(userInfoCheck == "" || userInfoCheck2== "") {
 
 else {
      if(userInfoCheck == userInfo.username && userInfoCheck2 == userInfo.password) {
-          document.getElementById('message1').style.color = 'green';
-          document.getElementById('message1').innerHTML = 'matching';
-
           document.getElementById('message').style.color = 'green';
           document.getElementById('message').innerHTML = 'matching';
           }
           else {
-          document.getElementById('message1').style.color = 'red';
-          document.getElementById('message1').innerHTML = 'not matching';   
           
           document.getElementById('message').style.color = 'red';
           document.getElementById('message').innerHTML = 'not matching';
