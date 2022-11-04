@@ -51,7 +51,7 @@ var  userInfo2 = [
      }
 ];
 
-/*
+
 //1st way of checking UserInput from Database
 
 document.getElementById("btn").onclick = function() {
@@ -63,25 +63,31 @@ document.getElementById("btn").onclick = function() {
           //                   it with input text
 
          if(userInfo2.some(x => x.userName === userInformationLook)){
+
                     if(userInfo2.some(x =>x.userPassword === userPasswordLook)){
                          document.getElementById('message').style.color = 'green';
                          document.getElementById('message').innerHTML = 'matching';  
-                    }
+                    }   
                     else {
                          document.getElementById('message').style.color = 'red';
                          document.getElementById('message').innerHTML = 'not matching';
                     };           
                }
+          else if (userInformationLook === "" && userPasswordLook ==="") {
+                    document.getElementById('message').style.color = 'red';
+                    document.getElementById('message').innerHTML = 'please fill-out input field'
+                    }
           else {
                document.getElementById('message').style.color = 'red';
                document.getElementById('message').innerHTML = 'not matching';
                };           
 };
-*/
+
 
 
 //2nd way of checking UserInput from Database
 
+/*
 document.getElementById("btn").onclick = function(){
      var userInformationLook = document.getElementById("username").value;
      var userPasswordLook    = document.getElementById("password1").value;
@@ -108,6 +114,7 @@ document.getElementById("btn").onclick = function(){
 
           signIn(userInformationLook, userPasswordLook);
 };
+*/
 
 /*
 let name = ["sponge", "good", "varry", "varry"];
